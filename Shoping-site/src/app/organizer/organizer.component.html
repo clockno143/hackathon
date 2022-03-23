@@ -1,0 +1,45 @@
+<body>
+  <p-toast position="top-left" ></p-toast> 
+
+    <div style="text-align:center;">
+      <h1>HACKATHON</h1>
+    
+    
+    </div>
+    <div class="scorebtn" >
+    </div>
+      <a  *ngIf="judge" (click)="select_round1()" type="button" class="btn btn-warning btn-lg" style="padding: 10px 25px;" >launch Round1</a>
+      
+     
+      <div class="scorebtn" >
+      <a  *ngIf="judge" (click)="select()" type="button" class="btn btn-warning btn-lg" style="padding: 10px 25px;" >launch Round2</a>
+      
+     
+    </div>
+    
+    
+    <section id="scoreboard">
+    <div class="row container-fluid">
+    <div class="col-lg-4 " *ngFor="let team of teams;let i=index" >
+      <div class="card" style="opacity: 1;" >
+        <div class="card-header" >
+          {{team.Team_Name}}
+            
+          <p-checkbox [(ngModel)]=" team_selection[i]" [binary]="true"></p-checkbox>
+          <h5 class="card-title" style="font-size: 140%;">{{team.Total}} </h5>
+        </div>
+        <div class="card-body" style="text-align: left;" >
+          
+          <p class="card-text">Idea and Usability <b>{{team.Idea_and_Usability}}</b> </p>
+          <p> Innovation  <b>{{team.Innovation }}</b></p>
+          <p>Implementation <b>{{team.Implementation}}</b></p>
+          <p> Team Presentation <b>{{team.Team_Presentation}}</b></p>
+          <p>Business Value <b>{{team.Business_Value}}</b> </p>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    
+    </section>
+    </body>

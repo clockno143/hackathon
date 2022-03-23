@@ -1,0 +1,75 @@
+h1
+
+{   padding-top: 30px;
+     color: rgb(253, 210, 54);
+   font:  60px 'Limelight', serif;
+   text-shadow: 0 0 1px rgb(255, 247, 0), 0 0 3px rgba(252, 230, 159, 0.71), 0 0 0.5rem rgb(255, 236, 0);
+}
+p
+{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 140%;
+}
+
+b
+{
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    font-size: 120%;
+    left: 78%;
+    padding-left: 10px;
+    margin-right: 15px;
+}
+.card-header
+{
+    text-align: center;
+     font-family: 'League Gothic', sans-serif;
+    
+     font-size: 250%;
+}
+.scorebtn
+{
+display: inline-block;
+margin: 20px;
+margin-bottom: 20px;
+}
+.card
+{
+    
+    margin: 10px;
+    color: yellow;
+    width: 70%;
+    background-color:rgba(0,0,0,0.69);
+    border:3px solid rgb(253, 210, 54);
+}
+.col-lg-4
+{
+    position: relative;
+    left: 4%;
+    text-align: center;
+    margin:  auto 0px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+body
+
+{
+    background-image: url("../home/home-bg.jpg");
+    background-color: #cccccc;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+    opacity: 0.99;
+    text-align: center;
+    margin: 10px;
+}

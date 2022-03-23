@@ -1,0 +1,37 @@
+﻿<body>
+ 
+
+<div style="text-align:center;">
+  <h1>HACKATHON</h1>
+
+
+</div>
+<div class="scorebtn" >
+  <a  *ngIf="judge" routerLink='/score' type="button" class="btn btn-warning btn-lg" style="padding: 10px 25px;" >Add Score</a>
+  <div><router-outlet></router-outlet></div>
+</div>
+
+
+<section id="scoreboard">
+<div class="row container-fluid">
+<div class="col-lg-4 " *ngFor="let team of teams">
+  <div class="card" style="opacity: 1;" >
+    <div class="card-header" >
+      {{team.Team_Name}}
+      <h5 class="card-title" style="font-size: 140%;">{{team.Total}} </h5>
+    </div>
+    <div class="card-body" style="text-align: left;" >
+      
+      <p class="card-text">Idea and Usability <b>{{team.Idea_and_Usability}}</b> </p>
+      <p> Innovation  <b>{{team.Innovation }}</b></p>
+      <p>Implementation <b>{{team.Implementation}}</b></p>
+      <p> Team Presentation <b>{{team.Team_Presentation}}</b></p>
+      <p>Business Value <b>{{team.Business_Value}}</b> </p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</section>
+</body>

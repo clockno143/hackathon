@@ -1,0 +1,26 @@
+<body>
+  <div class="loginForm">
+
+    <h1 class="header">LOGIN PAGE</h1>
+    <br>
+
+    
+
+      <input type="text" required [(ngModel)]="username"  name="username" 
+      placeholder="Enter username" ngModel />
+      <br>
+      
+
+      <input type="password" required [(ngModel)]="password" name="password" 
+      placeholder="Enter password" minlength="3" ngModel />
+      <br>
+      
+
+      <button class="btn" (click)=" loginUser()"    >LOGIN</button>
+      <p></p>
+      <h5 id="warn"> </h5>   
+         
+
+  </div>
+
+</body>
